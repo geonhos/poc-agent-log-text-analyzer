@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "src"}]
 
 [tool.poetry.dependencies]
-python = ">=3.9,<3.12"
+python = ">=3.9,<3.15"
 # LLM
 anthropic = "^0.26.0"
 # Vector DB
@@ -67,13 +67,13 @@ langchain = "^0.1.0"
 langchain-anthropic = "^0.1.0"
 langchain-community = "^0.0.20"
 
-[tool.poetry.group.llamaindex]
-optional = true
-
-[tool.poetry.group.llamaindex.dependencies]
-llama-index = "^0.9.0"
-llama-index-llms-anthropic = "^0.1.0"
-llama-index-vector-stores-chroma = "^0.1.0"
+# [tool.poetry.group.llamaindex]
+# optional = true
+#
+# [tool.poetry.group.llamaindex.dependencies]
+# llama-index = {version = "^0.9.0", python = ">=3.9,<3.12"}
+# llama-index-llms-anthropic = {version = "^0.1.0", python = ">=3.9,<3.12"}
+# llama-index-vector-stores-chroma = {version = "^0.1.0", python = ">=3.9,<3.12"}
 
 [tool.poetry.scripts]
 analyzer = "src.legacy.cli.main:cli"
