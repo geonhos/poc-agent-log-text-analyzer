@@ -68,8 +68,21 @@ logs/
 htmlcov/
 .pytest_cache/
 
+# Type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Poetry
+poetry.lock
+
 # Temporary files
 *.tmp
 *.bak
 temp/
 tmp/
+
+# Project specific
+benchmarks/reports/*.html
+benchmarks/reports/*.json
+comparisons/*.html
