@@ -1,0 +1,17 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Install dependencies
+RUN pip install --no-cache-dir \
+    httpx \
+    chromadb \
+    pyyaml
+
+# Copy source code
+COPY src/ ./src/
+COPY data/ ./data/
+COPY tests/legacy/test_phase3_ollama.py ./tests/legacy/
+
+# Run test
+CMD ["python", "tests/legacy/test_phase3_ollama.py"]
