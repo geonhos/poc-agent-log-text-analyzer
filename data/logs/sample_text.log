@@ -1,0 +1,5 @@
+[2024-01-01 10:00:00] GET /api/users
+[2024-01-01 10:01:00] POST /api/users with body {"name": "John"}
+[2024-01-01 10:02:00] GET /api/users/123 - status: 200
+[2024-01-01 10:03:00] API call: PUT /api/users/123
+[2024-01-01 10:04:00] Request: DELETE /api/users/123 - 204

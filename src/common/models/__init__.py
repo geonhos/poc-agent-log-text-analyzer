@@ -2,6 +2,7 @@
 Common data models
 """
 
+from .api_call import ApiCall, HttpMethod, LogEntry
 from .api_spec import (
     APIEndpoint,
     APISpec,
@@ -27,4 +28,8 @@ __all__ = [
     # Document models
     "Document",
     "DocumentCollection",
+    # API Call models
+    "ApiCall",
+    "LogEntry",
+    "HttpMethod",
 ]

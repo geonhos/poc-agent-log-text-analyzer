@@ -1,0 +1,5 @@
+{"method": "GET", "path": "/users", "timestamp": "2024-01-01T10:00:00Z"}
+{"method": "POST", "path": "/users", "body": {"name": "John", "email": "john@example.com"}, "timestamp": "2024-01-01T10:01:00Z"}
+{"method": "GET", "path": "/users/123", "status": 200, "timestamp": "2024-01-01T10:02:00Z"}
+{"method": "PUT", "path": "/users/123", "body": {"name": "Jane"}, "headers": {"Content-Type": "application/json"}, "timestamp": "2024-01-01T10:03:00Z"}
+{"method": "DELETE", "path": "/users/123", "status": 204, "timestamp": "2024-01-01T10:04:00Z"}
